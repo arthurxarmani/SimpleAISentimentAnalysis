@@ -75,8 +75,11 @@ sentiment_analysis = pipeline("sentiment-analysis", model="siebert/sentiment-rob
 def analyze_sentiment(text):
     result = sentiment_analysis(text)[0]
     return result['label']
+
 ```
 😃 Check out more about this model on [Hugging Face](https://huggingface.co/siebert/sentiment-roberta-large-english).
+Please cite [this paper](https://www.sciencedirect.com/science/article/pii/S0167811622000477) (Published in the [IJRM](https://www.journals.elsevier.com/international-journal-of-research-in-marketing)) when you use this model. 
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
